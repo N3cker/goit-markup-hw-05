@@ -162,6 +162,7 @@ header .navbar {
 
 header .navbar-wrapper {
   border: 1px solid var(--color-nav-border);
+  position: relative;
 }
 
 header .navbar ul {
@@ -568,4 +569,18 @@ footer .media-icons-list svg {
 
 .gallery li:hover .gallery-hover {
   bottom: 0;
+}
+
+.nav-active-page::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 4px;
+  width: 55px;
+  background-color: var(--color-blue);
+}
+
+.nav-active-page a {
+  color: var(--color-blue);
 }
