@@ -193,9 +193,14 @@ header .navbar ul li a {
   font-weight: 500;
 }
 
-header .navbar ul li a:hover {
+header .navbar ul li:hover a {
   color: var(--color-blue);
 }
+
+header .navbar ul li:hover svg {
+  fill: var(--color-blue);
+}
+
 
 /* Splash */
 .splash {
@@ -316,7 +321,7 @@ header .navbar ul li a:hover {
   font-size: 14px;
   font-weight: bold;
   line-height: 16.41px;
-  transition: bottom 250ms linear;
+  transition: bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .about li:hover p {
@@ -380,6 +385,10 @@ header .navbar ul li a:hover {
 
 .our-team .media-icons-list li:hover {
   background-color: var(--color-blue);
+}
+
+.our-team .media-icons-list li:hover svg {
+  fill: var(--color-white);
 }
 
 .our-team .media-icons-list li a{
@@ -518,7 +527,7 @@ footer .media-icons-list svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity .25s linear;
+  transition: opacity .25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -556,7 +565,7 @@ footer .media-icons-list svg {
   display: block;
   width: 16px;
   height: 2px;
-  background-color: #212121;
+  background-color: var(--color-black);
   position: absolute;
   left: 51%;
   top: 50%;
@@ -606,7 +615,7 @@ footer .media-icons-list svg {
   position: absolute;
   top: 0;
   left: 0;
-  transition: opacity .25s linear;
+  transition: opacity .25s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
 }
 
@@ -656,7 +665,8 @@ footer .media-icons-list svg {
   font-size: 18px;
   letter-spacing: 3%;
   line-height: 28px;
-  transition: bottom 250ms linear;
+  transition: bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .gallery li:hover .gallery-hover {
