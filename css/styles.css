@@ -381,10 +381,17 @@ header .navbar ul li:hover svg {
   margin: 0 5px;
   cursor: pointer;
   box-shadow: none;
+  transition: background-color .25s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .our-team .media-icons-list li:hover {
   background-color: var(--color-blue);
+}
+
+.our-team .media-icons-list svg {
+  fill: var(--color-grey-icons);
+  transition: fill .25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team .media-icons-list li:hover svg {
@@ -395,9 +402,6 @@ header .navbar ul li:hover svg {
   margin: 0;
 }
 
-.our-team .media-icons-list svg {
-  fill: var(--color-grey-icons);
-}
 
 /* Our Clients */
 .our-clients h2 {
@@ -493,6 +497,7 @@ footer .address-footer li:first-child {
   height: 44px;
   margin-right: 10px;
   overflow: hidden;
+  transition: background-color .25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .media-icons-list li:hover {
